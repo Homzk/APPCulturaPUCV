@@ -304,7 +304,6 @@ class _InicioWidgetState extends State<InicioWidget>
                 children: [
                   if (responsiveVisibility(
                     context: context,
-                    tabletLandscape: false,
                     desktop: false,
                   ))
                     Padding(
@@ -1131,6 +1130,7 @@ class _InicioWidgetState extends State<InicioWidget>
                     context: context,
                     phone: false,
                     tablet: false,
+                    tabletLandscape: false,
                   ))
                     Column(
                       mainAxisSize: MainAxisSize.max,
@@ -1283,7 +1283,10 @@ class _InicioWidgetState extends State<InicioWidget>
                                                                   context)
                                                               .width *
                                                           0.5,
-                                                      height: 414.0,
+                                                      height: MediaQuery.sizeOf(
+                                                                  context)
+                                                              .height *
+                                                          0.4,
                                                       decoration: BoxDecoration(
                                                         color:
                                                             Color(0x00FFFFFF),
@@ -1371,7 +1374,7 @@ class _InicioWidgetState extends State<InicioWidget>
                                                                                 Align(
                                                                                   alignment: AlignmentDirectional(-1.0, 0.0),
                                                                                   child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(56.0, 60.0, 0.0, 0.0),
+                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
                                                                                     child: Material(
                                                                                       color: Colors.transparent,
                                                                                       elevation: 10.0,
@@ -1380,9 +1383,9 @@ class _InicioWidgetState extends State<InicioWidget>
                                                                                       ),
                                                                                       child: Container(
                                                                                         width: 188.0,
-                                                                                        height: 116.0,
+                                                                                        height: 111.0,
                                                                                         decoration: BoxDecoration(
-                                                                                          color: Color(0xCE007DCB),
+                                                                                          color: Color(0x98007DCB),
                                                                                           borderRadius: BorderRadius.circular(5.0),
                                                                                           border: Border.all(
                                                                                             color: Color(0xFF007DCB),
@@ -1462,77 +1465,54 @@ class _InicioWidgetState extends State<InicioWidget>
                                                                                 Flexible(
                                                                                   child: Align(
                                                                                     alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                    child: Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(56.0, 40.0, 0.0, 0.0),
-                                                                                      child: Material(
-                                                                                        color: Colors.transparent,
-                                                                                        elevation: 10.0,
-                                                                                        shape: RoundedRectangleBorder(
+                                                                                    child: Material(
+                                                                                      color: Colors.transparent,
+                                                                                      elevation: 10.0,
+                                                                                      shape: RoundedRectangleBorder(
+                                                                                        borderRadius: BorderRadius.circular(5.0),
+                                                                                      ),
+                                                                                      child: Container(
+                                                                                        width: double.infinity,
+                                                                                        height: 120.0,
+                                                                                        decoration: BoxDecoration(
+                                                                                          color: Color(0x98007DCB),
                                                                                           borderRadius: BorderRadius.circular(5.0),
-                                                                                        ),
-                                                                                        child: Container(
-                                                                                          width: MediaQuery.sizeOf(context).width * 0.335,
-                                                                                          height: 120.0,
-                                                                                          decoration: BoxDecoration(
-                                                                                            color: Color(0xCE007DCB),
-                                                                                            borderRadius: BorderRadius.circular(5.0),
-                                                                                            border: Border.all(
-                                                                                              color: Color(0xFF007DCB),
-                                                                                              width: 1.0,
-                                                                                            ),
-                                                                                          ),
-                                                                                          child: Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
-                                                                                            child: Column(
-                                                                                              mainAxisSize: MainAxisSize.max,
-                                                                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                              children: [
-                                                                                                Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                                  child: Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                                    child: Text(
-                                                                                                      valueOrDefault<String>(
-                                                                                                        listEventosItem.titulo,
-                                                                                                        'tit',
-                                                                                                      ),
-                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                            color: Colors.white,
-                                                                                                            fontSize: 25.0,
-                                                                                                            letterSpacing: 0.0,
-                                                                                                            fontWeight: FontWeight.w900,
-                                                                                                            useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                                                          ),
-                                                                                                    ),
-                                                                                                  ),
-                                                                                                ),
-                                                                                                Align(
-                                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                                  child: Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                                    child: Text(
-                                                                                                      valueOrDefault<String>(
-                                                                                                        listEventosItem.ubicacion,
-                                                                                                        'ubi',
-                                                                                                      ),
-                                                                                                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                            fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                            color: Colors.white,
-                                                                                                            fontSize: 12.0,
-                                                                                                            letterSpacing: 0.0,
-                                                                                                            fontWeight: FontWeight.w900,
-                                                                                                            useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                                                          ),
-                                                                                                    ),
-                                                                                                  ),
-                                                                                                ),
-                                                                                              ],
-                                                                                            ),
+                                                                                          border: Border.all(
+                                                                                            color: Color(0xFF007DCB),
+                                                                                            width: 1.0,
                                                                                           ),
                                                                                         ),
-                                                                                      ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation4']!),
-                                                                                    ),
+                                                                                        child: Padding(
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                          child: Column(
+                                                                                            mainAxisSize: MainAxisSize.max,
+                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                            children: [
+                                                                                              Align(
+                                                                                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                                child: Padding(
+                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                                  child: Text(
+                                                                                                    valueOrDefault<String>(
+                                                                                                      listEventosItem.titulo,
+                                                                                                      'tit',
+                                                                                                    ),
+                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                          fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                          color: Colors.white,
+                                                                                                          fontSize: 20.0,
+                                                                                                          letterSpacing: 0.0,
+                                                                                                          fontWeight: FontWeight.w900,
+                                                                                                          useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                        ),
+                                                                                                  ),
+                                                                                                ),
+                                                                                              ),
+                                                                                            ],
+                                                                                          ),
+                                                                                        ),
+                                                                                      ),
+                                                                                    ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation4']!),
                                                                                   ),
                                                                                 ),
                                                                                 Align(
@@ -1574,7 +1554,7 @@ class _InicioWidgetState extends State<InicioWidget>
                                                                                     ).animateOnPageLoad(animationsMap['buttonOnPageLoadAnimation2']!),
                                                                                   ),
                                                                                 ),
-                                                                              ],
+                                                                              ].divide(SizedBox(height: 15.0)),
                                                                             ),
                                                                           ),
                                                                         ],
@@ -1636,8 +1616,14 @@ class _InicioWidgetState extends State<InicioWidget>
                                               ],
                                             ),
                                           ),
-                                          Flexible(
+                                          Expanded(
                                             child: Container(
+                                              width: MediaQuery.sizeOf(context)
+                                                      .width *
+                                                  0.3,
+                                              height: MediaQuery.sizeOf(context)
+                                                      .height *
+                                                  0.3,
                                               constraints: BoxConstraints(
                                                 minWidth: 350.0,
                                                 maxWidth: 600.0,
@@ -1647,7 +1633,7 @@ class _InicioWidgetState extends State<InicioWidget>
                                                 color: Color(0x00FFFFFF),
                                               ),
                                               child: Column(
-                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisSize: MainAxisSize.min,
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 crossAxisAlignment:
@@ -1880,7 +1866,7 @@ class _InicioWidgetState extends State<InicioWidget>
                                                         child: Align(
                                                           alignment:
                                                               AlignmentDirectional(
-                                                                  0.0, 0.0),
+                                                                  0.0, 1.0),
                                                           child: ClipRRect(
                                                             borderRadius:
                                                                 BorderRadius

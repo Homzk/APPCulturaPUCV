@@ -327,8 +327,8 @@ class _CredencialWidgetState extends State<CredencialWidget>
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                               child: Container(
-                                width: 478.0,
-                                height: 580.0,
+                                width: 455.0,
+                                height: 561.0,
                                 decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(10.0),
@@ -778,102 +778,6 @@ class _CredencialWidgetState extends State<CredencialWidget>
                                                               ),
                                                             ],
                                                           ),
-                                                        ),
-                                                        Row(
-                                                          mainAxisSize:
-                                                              MainAxisSize.max,
-                                                          mainAxisAlignment:
-                                                              MainAxisAlignment
-                                                                  .center,
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .center,
-                                                          children: [
-                                                            FFButtonWidget(
-                                                              onPressed:
-                                                                  () async {
-                                                                GoRouter.of(
-                                                                        context)
-                                                                    .prepareAuthEvent();
-                                                                await authManager
-                                                                    .signOut();
-                                                                GoRouter.of(
-                                                                        context)
-                                                                    .clearRedirectLocation();
-
-                                                                context.goNamedAuth(
-                                                                    'inicio',
-                                                                    context
-                                                                        .mounted);
-                                                              },
-                                                              text:
-                                                                  'Cerrar Sesión',
-                                                              icon: Icon(
-                                                                Icons.logout,
-                                                                size: 18.0,
-                                                              ),
-                                                              options:
-                                                                  FFButtonOptions(
-                                                                width: 200.0,
-                                                                height: 35.0,
-                                                                padding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                iconAlignment:
-                                                                    IconAlignment
-                                                                        .end,
-                                                                iconPadding:
-                                                                    EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                color: Colors
-                                                                    .white,
-                                                                textStyle: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      fontFamily:
-                                                                          'Plus Jakarta Sans',
-                                                                      color: Color(
-                                                                          0xFF7A7A7A),
-                                                                      fontSize:
-                                                                          14.0,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight:
-                                                                          FontWeight
-                                                                              .w900,
-                                                                      decoration:
-                                                                          TextDecoration
-                                                                              .underline,
-                                                                      useGoogleFonts: GoogleFonts
-                                                                              .asMap()
-                                                                          .containsKey(
-                                                                              'Plus Jakarta Sans'),
-                                                                    ),
-                                                                elevation: 0.0,
-                                                                borderSide:
-                                                                    BorderSide(
-                                                                  color: Color(
-                                                                      0x00FFFFFF),
-                                                                  width: 0.0,
-                                                                ),
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            8.0),
-                                                              ),
-                                                              showLoadingIndicator:
-                                                                  false,
-                                                            ),
-                                                          ],
                                                         ),
                                                       ],
                                                     ),

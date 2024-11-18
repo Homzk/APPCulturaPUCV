@@ -816,7 +816,7 @@ class _InscripcionWidgetState extends State<InscripcionWidget>
                                                                 'Plus Jakarta Sans'),
                                                       ),
                                                   hintText:
-                                                      'Número de asistentes',
+                                                      'Número de invitados',
                                                   icon: Icon(
                                                     Icons
                                                         .keyboard_arrow_down_rounded,
