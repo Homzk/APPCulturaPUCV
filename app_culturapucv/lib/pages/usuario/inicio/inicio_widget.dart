@@ -1139,7 +1139,7 @@ class _InicioWidgetState extends State<InicioWidget>
                       children: [
                         Container(
                           width: double.infinity,
-                          height: 123.0,
+                          height: 113.0,
                           decoration: BoxDecoration(
                             color: Color(0xFF006EB6),
                           ),
@@ -1174,17 +1174,13 @@ class _InicioWidgetState extends State<InicioWidget>
                                 ),
                                 child: Align(
                                   alignment: AlignmentDirectional(0.0, 0.0),
-                                  child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
-                                        0.0, 15.0, 0.0, 0.0),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(8.0),
-                                      child: Image.asset(
-                                        'assets/images/logo_linea_BCO_3x_PUCV-2016_hor_(1).png',
-                                        width: double.infinity,
-                                        height: double.infinity,
-                                        fit: BoxFit.contain,
-                                      ),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(8.0),
+                                    child: Image.asset(
+                                      'assets/images/logo_linea_BCO_3x_PUCV-2016_hor_(1).png',
+                                      width: double.infinity,
+                                      height: double.infinity,
+                                      fit: BoxFit.contain,
                                     ),
                                   ),
                                 ),
@@ -1264,356 +1260,355 @@ class _InicioWidgetState extends State<InicioWidget>
                                         crossAxisAlignment:
                                             CrossAxisAlignment.center,
                                         children: [
-                                          Padding(
-                                            padding:
-                                                EdgeInsetsDirectional.fromSTEB(
-                                                    0.0, 0.0, 0.0, 30.0),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
-                                              children: [
-                                                Flexible(
-                                                  child: Align(
-                                                    alignment:
-                                                        AlignmentDirectional(
-                                                            0.0, 0.0),
-                                                    child: Container(
-                                                      width: MediaQuery.sizeOf(
-                                                                  context)
-                                                              .width *
-                                                          0.5,
-                                                      height: MediaQuery.sizeOf(
-                                                                  context)
-                                                              .height *
-                                                          0.4,
-                                                      decoration: BoxDecoration(
-                                                        color:
-                                                            Color(0x00FFFFFF),
-                                                      ),
-                                                      child: Align(
-                                                        alignment:
-                                                            AlignmentDirectional(
-                                                                0.0, 0.0),
-                                                        child: Builder(
-                                                          builder: (context) {
-                                                            final listEventos =
-                                                                inicioEventsRowList
-                                                                    .map((e) =>
-                                                                        e)
-                                                                    .toList();
+                                          Flexible(
+                                            child: Padding(
+                                              padding: EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      0.0, 0.0, 0.0, 30.0),
+                                              child: Row(
+                                                mainAxisSize: MainAxisSize.max,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                children: [
+                                                  Expanded(
+                                                    child: Align(
+                                                      alignment:
+                                                          AlignmentDirectional(
+                                                              0.0, 0.0),
+                                                      child: Container(
+                                                        width:
+                                                            MediaQuery.sizeOf(
+                                                                        context)
+                                                                    .width *
+                                                                0.5,
+                                                        height:
+                                                            MediaQuery.sizeOf(
+                                                                        context)
+                                                                    .height *
+                                                                0.4,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          color:
+                                                              Color(0x00FFFFFF),
+                                                        ),
+                                                        child: Align(
+                                                          alignment:
+                                                              AlignmentDirectional(
+                                                                  0.0, 0.0),
+                                                          child: Builder(
+                                                            builder: (context) {
+                                                              final listEventos =
+                                                                  inicioEventsRowList
+                                                                      .map(
+                                                                          (e) =>
+                                                                              e)
+                                                                      .toList();
 
-                                                            return Container(
-                                                              width: MediaQuery
-                                                                          .sizeOf(
-                                                                              context)
-                                                                      .width *
-                                                                  1.0,
-                                                              height: 400.0,
-                                                              child:
-                                                                  CarouselSlider
-                                                                      .builder(
-                                                                itemCount:
-                                                                    listEventos
-                                                                        .length,
-                                                                itemBuilder:
-                                                                    (context,
-                                                                        listEventosIndex,
-                                                                        _) {
-                                                                  final listEventosItem =
-                                                                      listEventos[
-                                                                          listEventosIndex];
-                                                                  return Padding(
-                                                                    padding: EdgeInsetsDirectional
-                                                                        .fromSTEB(
-                                                                            0.0,
-                                                                            20.0,
-                                                                            0.0,
-                                                                            0.0),
-                                                                    child:
-                                                                        Container(
-                                                                      width: double
-                                                                          .infinity,
-                                                                      height: double
-                                                                          .infinity,
+                                                              return Container(
+                                                                width: MediaQuery.sizeOf(
+                                                                            context)
+                                                                        .width *
+                                                                    1.0,
+                                                                height: 400.0,
+                                                                child:
+                                                                    CarouselSlider
+                                                                        .builder(
+                                                                  itemCount:
+                                                                      listEventos
+                                                                          .length,
+                                                                  itemBuilder:
+                                                                      (context,
+                                                                          listEventosIndex,
+                                                                          _) {
+                                                                    final listEventosItem =
+                                                                        listEventos[
+                                                                            listEventosIndex];
+                                                                    return Padding(
+                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          0.0,
+                                                                          20.0,
+                                                                          0.0,
+                                                                          0.0),
                                                                       child:
-                                                                          Stack(
-                                                                        alignment: AlignmentDirectional(
-                                                                            0.0,
-                                                                            0.0),
-                                                                        children: [
-                                                                          ClipRRect(
-                                                                            borderRadius:
-                                                                                BorderRadius.circular(5.0),
-                                                                            child:
-                                                                                Image.network(
-                                                                              listEventosItem.imagen!,
+                                                                          Container(
+                                                                        width: double
+                                                                            .infinity,
+                                                                        height:
+                                                                            double.infinity,
+                                                                        child:
+                                                                            Stack(
+                                                                          alignment: AlignmentDirectional(
+                                                                              0.0,
+                                                                              0.0),
+                                                                          children: [
+                                                                            ClipRRect(
+                                                                              borderRadius: BorderRadius.circular(5.0),
+                                                                              child: Image.network(
+                                                                                listEventosItem.imagen!,
+                                                                                width: double.infinity,
+                                                                                height: double.infinity,
+                                                                                fit: BoxFit.cover,
+                                                                                alignment: Alignment(0.0, 0.0),
+                                                                              ),
+                                                                            ).animateOnPageLoad(animationsMap['imageOnPageLoadAnimation2']!),
+                                                                            Container(
                                                                               width: double.infinity,
                                                                               height: double.infinity,
-                                                                              fit: BoxFit.cover,
-                                                                              alignment: Alignment(0.0, 0.0),
-                                                                            ),
-                                                                          ).animateOnPageLoad(
-                                                                              animationsMap['imageOnPageLoadAnimation2']!),
-                                                                          Container(
-                                                                            width:
-                                                                                double.infinity,
-                                                                            height:
-                                                                                double.infinity,
-                                                                            decoration:
-                                                                                BoxDecoration(
-                                                                              color: Color(0x00FFFFFF),
-                                                                              borderRadius: BorderRadius.circular(10.0),
-                                                                            ),
-                                                                            child:
-                                                                                Column(
-                                                                              mainAxisSize: MainAxisSize.max,
-                                                                              mainAxisAlignment: MainAxisAlignment.center,
-                                                                              crossAxisAlignment: CrossAxisAlignment.center,
-                                                                              children: [
-                                                                                Align(
-                                                                                  alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 60.0, 0.0, 0.0),
-                                                                                    child: Material(
-                                                                                      color: Colors.transparent,
-                                                                                      elevation: 10.0,
-                                                                                      shape: RoundedRectangleBorder(
-                                                                                        borderRadius: BorderRadius.circular(5.0),
-                                                                                      ),
-                                                                                      child: Container(
-                                                                                        width: 188.0,
-                                                                                        height: 111.0,
-                                                                                        decoration: BoxDecoration(
-                                                                                          color: Color(0x98007DCB),
-                                                                                          borderRadius: BorderRadius.circular(5.0),
-                                                                                          border: Border.all(
-                                                                                            color: Color(0xFF007DCB),
-                                                                                          ),
-                                                                                        ),
-                                                                                        child: Padding(
-                                                                                          padding: EdgeInsets.all(12.0),
-                                                                                          child: Column(
-                                                                                            mainAxisSize: MainAxisSize.max,
-                                                                                            crossAxisAlignment: CrossAxisAlignment.start,
-                                                                                            children: [
-                                                                                              Text(
-                                                                                                dateTimeFormat(
-                                                                                                  "EEEE",
-                                                                                                  listEventosItem.fecha!,
-                                                                                                  locale: FFLocalizations.of(context).languageCode,
-                                                                                                ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Colors.white,
-                                                                                                      fontSize: 16.0,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.w900,
-                                                                                                      useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                                                    ),
-                                                                                              ),
-                                                                                              Text(
-                                                                                                dateTimeFormat(
-                                                                                                  "dd",
-                                                                                                  listEventosItem.fecha!,
-                                                                                                  locale: FFLocalizations.of(context).languageCode,
-                                                                                                ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Colors.white,
-                                                                                                      fontSize: 22.0,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.w900,
-                                                                                                      useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                                                    ),
-                                                                                              ),
-                                                                                              Text(
-                                                                                                dateTimeFormat(
-                                                                                                  "MMMM, yyyy",
-                                                                                                  listEventosItem.fecha!,
-                                                                                                  locale: FFLocalizations.of(context).languageCode,
-                                                                                                ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Colors.white,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.w900,
-                                                                                                      useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                                                    ),
-                                                                                              ),
-                                                                                              Text(
-                                                                                                dateTimeFormat(
-                                                                                                  "HH:mm \'horas\'",
-                                                                                                  listEventosItem.fecha!,
-                                                                                                  locale: FFLocalizations.of(context).languageCode,
-                                                                                                ),
-                                                                                                style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                      color: Colors.white,
-                                                                                                      letterSpacing: 0.0,
-                                                                                                      fontWeight: FontWeight.w900,
-                                                                                                      useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
-                                                                                                    ),
-                                                                                              ),
-                                                                                            ],
-                                                                                          ),
-                                                                                        ),
-                                                                                      ),
-                                                                                    ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation3']!),
-                                                                                  ),
-                                                                                ),
-                                                                                Flexible(
-                                                                                  child: Align(
+                                                                              decoration: BoxDecoration(
+                                                                                color: Color(0x00FFFFFF),
+                                                                                borderRadius: BorderRadius.circular(10.0),
+                                                                              ),
+                                                                              child: Column(
+                                                                                mainAxisSize: MainAxisSize.min,
+                                                                                mainAxisAlignment: MainAxisAlignment.center,
+                                                                                crossAxisAlignment: CrossAxisAlignment.center,
+                                                                                children: [
+                                                                                  Align(
                                                                                     alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                    child: Material(
-                                                                                      color: Colors.transparent,
-                                                                                      elevation: 10.0,
-                                                                                      shape: RoundedRectangleBorder(
-                                                                                        borderRadius: BorderRadius.circular(5.0),
-                                                                                      ),
-                                                                                      child: Container(
-                                                                                        width: double.infinity,
-                                                                                        height: 120.0,
-                                                                                        decoration: BoxDecoration(
-                                                                                          color: Color(0x98007DCB),
+                                                                                    child: Padding(
+                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 0.0),
+                                                                                      child: Material(
+                                                                                        color: Colors.transparent,
+                                                                                        elevation: 10.0,
+                                                                                        shape: RoundedRectangleBorder(
                                                                                           borderRadius: BorderRadius.circular(5.0),
-                                                                                          border: Border.all(
-                                                                                            color: Color(0xFF007DCB),
-                                                                                            width: 1.0,
+                                                                                        ),
+                                                                                        child: Container(
+                                                                                          width: 188.0,
+                                                                                          height: 106.0,
+                                                                                          decoration: BoxDecoration(
+                                                                                            color: Color(0x98007DCB),
+                                                                                            borderRadius: BorderRadius.circular(5.0),
+                                                                                            border: Border.all(
+                                                                                              color: Color(0xFF007DCB),
+                                                                                            ),
+                                                                                          ),
+                                                                                          child: Padding(
+                                                                                            padding: EdgeInsets.all(12.0),
+                                                                                            child: Column(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                                                                              children: [
+                                                                                                Text(
+                                                                                                  dateTimeFormat(
+                                                                                                    "EEEE",
+                                                                                                    listEventosItem.fecha!,
+                                                                                                    locale: FFLocalizations.of(context).languageCode,
+                                                                                                  ),
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                        color: Colors.white,
+                                                                                                        fontSize: 14.0,
+                                                                                                        letterSpacing: 0.0,
+                                                                                                        fontWeight: FontWeight.w900,
+                                                                                                        useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                      ),
+                                                                                                ),
+                                                                                                Text(
+                                                                                                  dateTimeFormat(
+                                                                                                    "dd",
+                                                                                                    listEventosItem.fecha!,
+                                                                                                    locale: FFLocalizations.of(context).languageCode,
+                                                                                                  ),
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                        color: Colors.white,
+                                                                                                        fontSize: 19.0,
+                                                                                                        letterSpacing: 0.0,
+                                                                                                        fontWeight: FontWeight.w900,
+                                                                                                        useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                      ),
+                                                                                                ),
+                                                                                                Text(
+                                                                                                  dateTimeFormat(
+                                                                                                    "MMMM, yyyy",
+                                                                                                    listEventosItem.fecha!,
+                                                                                                    locale: FFLocalizations.of(context).languageCode,
+                                                                                                  ),
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                        color: Colors.white,
+                                                                                                        letterSpacing: 0.0,
+                                                                                                        fontWeight: FontWeight.w900,
+                                                                                                        useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                      ),
+                                                                                                ),
+                                                                                                Text(
+                                                                                                  dateTimeFormat(
+                                                                                                    "HH:mm \'horas\'",
+                                                                                                    listEventosItem.fecha!,
+                                                                                                    locale: FFLocalizations.of(context).languageCode,
+                                                                                                  ),
+                                                                                                  style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                        fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                        color: Colors.white,
+                                                                                                        letterSpacing: 0.0,
+                                                                                                        fontWeight: FontWeight.w900,
+                                                                                                        useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                      ),
+                                                                                                ),
+                                                                                              ],
+                                                                                            ),
                                                                                           ),
                                                                                         ),
-                                                                                        child: Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
-                                                                                          child: Column(
-                                                                                            mainAxisSize: MainAxisSize.max,
-                                                                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                                                            children: [
-                                                                                              Align(
-                                                                                                alignment: AlignmentDirectional(-1.0, 0.0),
-                                                                                                child: Padding(
-                                                                                                  padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
-                                                                                                  child: Text(
-                                                                                                    valueOrDefault<String>(
-                                                                                                      listEventosItem.titulo,
-                                                                                                      'tit',
-                                                                                                    ),
-                                                                                                    style: FlutterFlowTheme.of(context).bodyMedium.override(
-                                                                                                          fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                                          color: Colors.white,
-                                                                                                          fontSize: 20.0,
-                                                                                                          letterSpacing: 0.0,
-                                                                                                          fontWeight: FontWeight.w900,
-                                                                                                          useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                      ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation3']!),
+                                                                                    ),
+                                                                                  ),
+                                                                                  Flexible(
+                                                                                    child: Align(
+                                                                                      alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                      child: Material(
+                                                                                        color: Colors.transparent,
+                                                                                        elevation: 10.0,
+                                                                                        shape: RoundedRectangleBorder(
+                                                                                          borderRadius: BorderRadius.circular(5.0),
+                                                                                        ),
+                                                                                        child: Container(
+                                                                                          width: double.infinity,
+                                                                                          height: 120.0,
+                                                                                          decoration: BoxDecoration(
+                                                                                            color: Color(0x98007DCB),
+                                                                                            borderRadius: BorderRadius.circular(5.0),
+                                                                                            border: Border.all(
+                                                                                              color: Color(0xFF007DCB),
+                                                                                              width: 1.0,
+                                                                                            ),
+                                                                                          ),
+                                                                                          child: Padding(
+                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 5.0, 0.0, 0.0),
+                                                                                            child: Column(
+                                                                                              mainAxisSize: MainAxisSize.max,
+                                                                                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                                                              children: [
+                                                                                                Flexible(
+                                                                                                  child: Align(
+                                                                                                    alignment: AlignmentDirectional(-1.0, -1.0),
+                                                                                                    child: Padding(
+                                                                                                      padding: EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 0.0, 0.0),
+                                                                                                      child: Text(
+                                                                                                        valueOrDefault<String>(
+                                                                                                          listEventosItem.titulo,
+                                                                                                          'tit',
                                                                                                         ),
+                                                                                                        style: FlutterFlowTheme.of(context).bodyMedium.override(
+                                                                                                              fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
+                                                                                                              color: Colors.white,
+                                                                                                              fontSize: 18.0,
+                                                                                                              letterSpacing: 0.0,
+                                                                                                              fontWeight: FontWeight.w900,
+                                                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
+                                                                                                            ),
+                                                                                                      ),
+                                                                                                    ),
                                                                                                   ),
                                                                                                 ),
-                                                                                              ),
-                                                                                            ],
+                                                                                              ],
+                                                                                            ),
                                                                                           ),
                                                                                         ),
-                                                                                      ),
-                                                                                    ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation4']!),
+                                                                                      ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation4']!),
+                                                                                    ),
                                                                                   ),
-                                                                                ),
-                                                                                Align(
-                                                                                  alignment: AlignmentDirectional(1.0, 1.0),
-                                                                                  child: Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 15.0),
-                                                                                    child: FFButtonWidget(
-                                                                                      onPressed: () async {
-                                                                                        context.pushNamed(
-                                                                                          'detalles',
-                                                                                          queryParameters: {
-                                                                                            'id': serializeParam(
-                                                                                              listEventosItem.id,
-                                                                                              ParamType.int,
-                                                                                            ),
-                                                                                          }.withoutNulls,
-                                                                                        );
-                                                                                      },
-                                                                                      text: 'Ver Más',
-                                                                                      options: FFButtonOptions(
-                                                                                        width: 100.0,
-                                                                                        height: 35.0,
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
-                                                                                        iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                                                                                        color: Color(0xFF0A9EED),
-                                                                                        textStyle: FlutterFlowTheme.of(context).titleSmall.override(
-                                                                                              fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
-                                                                                              color: Colors.white,
-                                                                                              letterSpacing: 0.0,
-                                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
-                                                                                            ),
-                                                                                        elevation: 10.0,
-                                                                                        borderSide: BorderSide(
-                                                                                          color: Color(0x00FFFFFF),
+                                                                                  Align(
+                                                                                    alignment: AlignmentDirectional(1.0, 1.0),
+                                                                                    child: Padding(
+                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 15.0),
+                                                                                      child: FFButtonWidget(
+                                                                                        onPressed: () async {
+                                                                                          context.pushNamed(
+                                                                                            'detalles',
+                                                                                            queryParameters: {
+                                                                                              'id': serializeParam(
+                                                                                                listEventosItem.id,
+                                                                                                ParamType.int,
+                                                                                              ),
+                                                                                            }.withoutNulls,
+                                                                                          );
+                                                                                        },
+                                                                                        text: 'Ver Más',
+                                                                                        options: FFButtonOptions(
+                                                                                          width: 100.0,
+                                                                                          height: 35.0,
+                                                                                          padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                          color: Color(0xFF0A9EED),
+                                                                                          textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                                                                                                fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
+                                                                                                color: Colors.white,
+                                                                                                letterSpacing: 0.0,
+                                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
+                                                                                              ),
+                                                                                          elevation: 10.0,
+                                                                                          borderSide: BorderSide(
+                                                                                            color: Color(0x00FFFFFF),
+                                                                                          ),
+                                                                                          borderRadius: BorderRadius.circular(8.0),
+                                                                                          hoverColor: Color(0xFF007DCB),
                                                                                         ),
-                                                                                        borderRadius: BorderRadius.circular(8.0),
-                                                                                        hoverColor: Color(0xFF007DCB),
-                                                                                      ),
-                                                                                    ).animateOnPageLoad(animationsMap['buttonOnPageLoadAnimation2']!),
+                                                                                      ).animateOnPageLoad(animationsMap['buttonOnPageLoadAnimation2']!),
+                                                                                    ),
                                                                                   ),
-                                                                                ),
-                                                                              ].divide(SizedBox(height: 15.0)),
+                                                                                ].divide(SizedBox(height: 15.0)),
+                                                                              ),
                                                                             ),
-                                                                          ),
-                                                                        ],
+                                                                          ],
+                                                                        ),
                                                                       ),
-                                                                    ),
-                                                                  );
-                                                                },
-                                                                carouselController:
-                                                                    _model.carouselController2 ??=
-                                                                        CarouselSliderController(),
-                                                                options:
-                                                                    CarouselOptions(
-                                                                  initialPage: max(
-                                                                      0,
-                                                                      min(
-                                                                          1,
-                                                                          listEventos.length -
-                                                                              1)),
-                                                                  viewportFraction:
-                                                                      1.0,
-                                                                  disableCenter:
-                                                                      true,
-                                                                  enlargeCenterPage:
-                                                                      true,
-                                                                  enlargeFactor:
-                                                                      1.0,
-                                                                  enableInfiniteScroll:
-                                                                      true,
-                                                                  scrollDirection:
-                                                                      Axis.horizontal,
-                                                                  autoPlay:
-                                                                      true,
-                                                                  autoPlayAnimationDuration:
-                                                                      Duration(
-                                                                          milliseconds:
-                                                                              1),
-                                                                  autoPlayInterval:
-                                                                      Duration(
-                                                                          milliseconds:
-                                                                              (1 + 5000)),
-                                                                  autoPlayCurve:
-                                                                      Curves
-                                                                          .linear,
-                                                                  pauseAutoPlayInFiniteScroll:
-                                                                      true,
-                                                                  onPageChanged: (index,
-                                                                          _) =>
-                                                                      _model.carouselCurrentIndex2 =
-                                                                          index,
+                                                                    );
+                                                                  },
+                                                                  carouselController:
+                                                                      _model.carouselController2 ??=
+                                                                          CarouselSliderController(),
+                                                                  options:
+                                                                      CarouselOptions(
+                                                                    initialPage: max(
+                                                                        0,
+                                                                        min(
+                                                                            1,
+                                                                            listEventos.length -
+                                                                                1)),
+                                                                    viewportFraction:
+                                                                        1.0,
+                                                                    disableCenter:
+                                                                        true,
+                                                                    enlargeCenterPage:
+                                                                        true,
+                                                                    enlargeFactor:
+                                                                        1.0,
+                                                                    enableInfiniteScroll:
+                                                                        true,
+                                                                    scrollDirection:
+                                                                        Axis.horizontal,
+                                                                    autoPlay:
+                                                                        true,
+                                                                    autoPlayAnimationDuration:
+                                                                        Duration(
+                                                                            milliseconds:
+                                                                                1),
+                                                                    autoPlayInterval:
+                                                                        Duration(
+                                                                            milliseconds:
+                                                                                (1 + 5000)),
+                                                                    autoPlayCurve:
+                                                                        Curves
+                                                                            .linear,
+                                                                    pauseAutoPlayInFiniteScroll:
+                                                                        true,
+                                                                    onPageChanged: (index,
+                                                                            _) =>
+                                                                        _model.carouselCurrentIndex2 =
+                                                                            index,
+                                                                  ),
                                                                 ),
-                                                              ),
-                                                            );
-                                                          },
+                                                              );
+                                                            },
+                                                          ),
                                                         ),
                                                       ),
                                                     ),
                                                   ),
-                                                ),
-                                              ],
+                                                ],
+                                              ),
                                             ),
                                           ),
                                           Expanded(
