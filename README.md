@@ -17,11 +17,8 @@ La aplicación **APPCulturaPUCV** permite gestionar eventos culturales, preinscr
     ```
 2. Instalar dependencias:
     ```bash
-    flutter pub get
+    flutter pub get 
     ```
-3. Configurar Supabase con las credenciales:
-    email:  cultupucv@gmail.com
-    contraseña: culturaPucv00!.
 
 ### Funcionalidades Principales
 - Registro de usuarios con QR.
